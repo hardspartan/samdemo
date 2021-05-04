@@ -10,7 +10,12 @@ Resources:
       CodeUri: index.py
       Description: Sample SAM Lambda Deployment
       Events:
+        Apigtw:
+          Type: Api
+          Properties:
+            Path: /photos
+            Method: post
         ScheduleEvent:
           Type: Schedule
           Properties:
-            Schedule: rate(10 minutes)
+            Schedule: rate(12 hours)
