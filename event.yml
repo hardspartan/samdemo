@@ -13,8 +13,8 @@ Resources:
         Apigtw:
           Type: Api
           Properties:
-            Path: /photos
-            Method: post
+            Path: /bitcoin
+            Method: get
         ScheduleEvent:
           Type: Schedule
           Properties:
