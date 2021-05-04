@@ -10,11 +10,16 @@ Resources:
       CodeUri: index.py
       Description: Sample SAM Lambda Deployment
       Events:
-        Apigtw:
+        GetEvent:
           Type: Api
           Properties:
-            Path: /bitcoin
+            Path: /
             Method: get
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post
         ScheduleEvent:
           Type: Schedule
           Properties:
